@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="utf-8">
-		<title>Ball</title>
+		<title>Ball Animation</title>
 		<script src="jquery/jquery-3.5.1.min.js"></script>
 		<style>
 		* { margin: 0; padding: 0; }
@@ -55,6 +55,18 @@
 					$("#box4").animate({top:"-=100", height:"+=100"}, 350);
 					$("#box4").animate({top:"+=100", height:"-=100"}, 700);
 					});
+					b.animate({top:"-=250", left:"-=100"}, "slow");
+					b.animate({top:"+=250", left:"-=100"}, "slow", function(){
+					$("#box3").animate({top:"-=100", height:"+=100"}, 350);
+					$("#box3").animate({top:"+=100", height:"-=100"}, 700);
+					});
+					b.animate({top:"-=250", left:"-=100"}, "slow");
+					b.animate({top:"+=250", left:"-=100"}, "slow", function(){
+					$("#box2").animate({top:"-=100", height:"+=100"}, 350);
+					$("#box2").animate({top:"+=100", height:"-=100"}, 700);
+					});
+					b.animate({top:"-=250", left:"-=100"}, "slow");
+					b.animate({top:"+=250", left:"-=100"}, "slow");
 				});
 			});
 			</script>
